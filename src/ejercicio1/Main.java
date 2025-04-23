@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main {
-    public boolean fichero(String operacion, String fichero){
+    public static boolean fichero(String operacion, String fichero){
         boolean res = false;
         Gson gson = new Gson();
         switch (operacion){
@@ -48,7 +48,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        String fichero = args[1];
+        String operacion = args[0];
+        fichero(operacion,fichero);
     }
 
 }
