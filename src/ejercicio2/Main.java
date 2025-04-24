@@ -29,8 +29,21 @@ public class Main {
                 Book book1 = new Book("Harry Potter", author1, 39.99, 100);
                 Book book2 = new Book("1984", author2, 19.99, 150);
 
-                // Guardar los objetos en el archivo
-                guardarObjetoEnArchivo(fichero, new Object[]{circle1, circle2, rectangle1, rectangle2, author1, author2, book1, book2});
+                // Crear objetos Point2D y Point3D
+                Point2D point2D1 = new Point2D(1.0f, 2.0f);
+                Point2D point2D2 = new Point2D(3.0f, 4.0f);
+                Point3D point3D1 = new Point3D(1.0f, 2.0f, 3.0f);
+                Point3D point3D2 = new Point3D(4.0f, 5.0f, 6.0f);
+
+                // Crear objetos MovablePoint
+                MovablePoint movablePoint1 = new MovablePoint(0, 0, 1, 1);
+                MovablePoint movablePoint2 = new MovablePoint(5, 5, 2, 2);
+
+                // Guardar todos los objetos en el archivo
+                guardarObjetoEnArchivo(fichero, new Object[]{
+                        circle1, circle2, rectangle1, rectangle2, author1, author2,
+                        book1, book2, point2D1, point2D2, point3D1, point3D2, movablePoint1, movablePoint2
+                });
                 System.out.println("Archivo creado con los objetos.");
                 res = true;
                 break;
@@ -82,3 +95,5 @@ public class Main {
         }
     }
 }
+
+
