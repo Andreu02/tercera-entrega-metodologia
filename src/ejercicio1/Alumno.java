@@ -32,4 +32,8 @@ public class Alumno {
     }
 
         // Otros
+        @Override
+        public String toString() {
+            return nombre + " - " + edad + " años - Sexo: " + gender;
+        }
 }
