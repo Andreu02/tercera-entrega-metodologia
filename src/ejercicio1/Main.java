@@ -11,19 +11,26 @@ public class Main {
         boolean res = false;
         Gson gson = new Gson();
         switch (operacion){
-            case "init":{
-                Alumno alumnoVacio = new Alumno("",0,'o');
-                guardarObjetoEnArchivo(fichero,alumnoVacio);
+            case "init": {
+                Alumno alumnoVacio = new Alumno("", 0, 'o');
+                guardarObjetoEnArchivo(fichero, alumnoVacio);
+                System.out.println("Archivo creado con un alumno vacío.");
                 res = true;
+                break;
             }
-            case "show":{
+            case "show": {
                 Alumno alumnoCargado = cargarObjetoDesdeArchivo(fichero, Alumno.class);
                 if (alumnoCargado != null) {
-                    System.out.println("Alumno cargado: " + alumnoCargado.nombre);
+                    System.out.println("Alumno cargado: ");
+                    System.out.println("Nombre: " + alumnoCargado.nombre);
+                    System.out.println("Edad: " + alumnoCargado.edad);
+                    System.out.println("Sexo: " + alumnoCargado.gender);
                     res = true;
                 }
+                break;
             }
             default:
+                System.out.println("Operación no válida. Usa 'init' o 'show'.");
         }
         return res;
     }
@@ -48,9 +55,18 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String fichero = args[1];
-        String operacion = args[0];
-        fichero(operacion,fichero);
-    }
+        // Mostrar argumentos recibidos
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < args.length; i++) {
+            sb.append("Argumento " + i + ": " + args[i] + "\n");
+        }
+        System.out.println("Argumentos: \n" + sb);
 
+        // Ejecutar lógica si se pasaron correctamente los parámetros
+        if (args.length == 2) {
+            fichero(args[0], args[1]);
+        } else {
+            System.out.println("Uso correcto: java -jar TuProyecto.jar <init/show> <fichero>");
+        }
+    }
 }
