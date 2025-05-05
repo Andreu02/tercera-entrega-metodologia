@@ -46,7 +46,7 @@ public class Main {
                 });
                 System.out.println("Archivo creado con los objetos.");
                 res = true;
-                break;
+
             }
 
             case "show": {
@@ -58,7 +58,7 @@ public class Main {
                     }
                     res = true;
                 }
-                break;
+
             }
 
             default:

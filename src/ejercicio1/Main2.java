@@ -22,7 +22,7 @@ public class Main2 {
 
                 System.out.println("Archivo creado con varios alumnos.");
                 res = true;
-                break;
+
             }
 
             case "show": {
@@ -37,7 +37,6 @@ public class Main2 {
                     }
                     res = true;
                 }
-                break;
             }
             default:
                 System.out.println("Operación no válida. Usa 'init' o 'show'.");

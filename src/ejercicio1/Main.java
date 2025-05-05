@@ -16,7 +16,7 @@ public class Main {
                 guardarObjetoEnArchivo(fichero, alumnoVacio);
                 System.out.println("Archivo creado con un alumno vacío.");
                 res = true;
-                break;
+
             }
             case "show": {
                 Alumno alumnoCargado = cargarObjetoDesdeArchivo(fichero, Alumno.class);
@@ -27,7 +27,7 @@ public class Main {
                     System.out.println("Sexo: " + alumnoCargado.gender);
                     res = true;
                 }
-                break;
+
             }
             default:
                 System.out.println("Operación no válida. Usa 'init' o 'show'.");
