@@ -1,16 +1,18 @@
 package ejercicio4;
 
 public class Library {
+    // ZONA DE ATRIBUTOS
     private String name;
     private Book2[] books;  // Un array de objetos Book2
 
-    // Constructor
+    // ZONA DE MÉTODOS
+        // Constructor
     public Library(String name, Book2[] books) {
         this.name = name;
         this.books = books;
     }
 
-    // Getters
+        // Getters
     public String getName() {
         return name;
     }
@@ -19,7 +21,7 @@ public class Library {
         return books;
     }
 
-    // Setters
+        // Setters
     public void setName(String name) {
         this.name = name;
     }
@@ -28,7 +30,7 @@ public class Library {
         this.books = books;
     }
 
-    // ToString
+        // ToString
     @Override
     public String toString() {
         return "Library [name=" + name + ", books=" + books.length + " books]";

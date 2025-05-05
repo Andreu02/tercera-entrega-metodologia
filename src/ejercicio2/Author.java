@@ -35,6 +35,7 @@ public class Author {
     // Zona de métodos: Otros
     @Override
     public String toString() {
-        return "Author[name=" + name + ",email=" + email + ",gender=" + gender + "]";
+        return "Author {name=" + name + ", email=" + email + ", gender=" + gender + "}";
     }
+
 }

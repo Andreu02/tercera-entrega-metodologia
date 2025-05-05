@@ -1,18 +1,20 @@
 package ejercicio3;
 
 public class Persona {
+    // ZONA DE ATRIBUTOS
     private String nombre;
     private int edad;
     private String direccion;
 
-    // Constructor
+    // ZONA DE MÉTODOS
+        // Constructor
     public Persona(String nombre, int edad, String direccion) {
         this.nombre = nombre;
         this.edad = edad;
         this.direccion = direccion;
     }
 
-    // Getters
+        // Getters
     public String getNombre() {
         return nombre;
     }
@@ -25,7 +27,7 @@ public class Persona {
         return direccion;
     }
 
-    // toString
+        // toString
     @Override
     public String toString() {
         return "Persona[nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + "]";

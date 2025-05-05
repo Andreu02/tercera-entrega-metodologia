@@ -55,14 +55,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Mostrar argumentos recibidos
+
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < args.length; i++) {
             sb.append("Argumento " + i + ": " + args[i] + "\n");
         }
         System.out.println("Argumentos: \n" + sb);
 
-        // Ejecutar lógica si se pasaron correctamente los parámetros
+
         if (args.length == 2) {
             fichero(args[0], args[1]);
         } else {

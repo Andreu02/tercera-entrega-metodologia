@@ -37,6 +37,7 @@ public class Rectangle {
     }
     @Override
     public String toString() {
-        return "Rectangle [length=" + length + ", width=" + width + "]";
+        return "Rectangle {length=" + length + ", width=" + width + "}";
     }
+
 }

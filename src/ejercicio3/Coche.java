@@ -1,18 +1,20 @@
 package ejercicio3;
 
 public class Coche {
+    // ZONA DE ATRIBUTOS
     private String marca;
     private String modelo;
     private int anio;
 
-    // Constructor
+    // ZONA DE MÉTODOS
+        // Constructor
     public Coche(String marca, String modelo, int anio) {
         this.marca = marca;
         this.modelo = modelo;
         this.anio = anio;
     }
 
-    // Getters
+        // Getters
     public String getMarca() {
         return marca;
     }
@@ -25,7 +27,7 @@ public class Coche {
         return anio;
     }
 
-    // toString
+        // toString
     @Override
     public String toString() {
         return "Coche[marca=" + marca + ", modelo=" + modelo + ", anio=" + anio + "]";

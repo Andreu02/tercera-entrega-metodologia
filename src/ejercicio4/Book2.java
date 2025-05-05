@@ -1,16 +1,18 @@
 package ejercicio4;
 
 public class Book2 {
+    // ZONA DE ATRIBUTOS
     private String title;
     private String author;
 
-    // Constructor
+    // ZONA DE MÉTODOS
+        // Constructor
     public Book2(String title, String author) {
         this.title = title;
         this.author = author;
     }
 
-    // Getters
+        // Getters
     public String getTitle() {
         return title;
     }
@@ -19,7 +21,7 @@ public class Book2 {
         return author;
     }
 
-    // Setters
+        // Setters
     public void setTitle(String title) {
         this.title = title;
     }
@@ -28,7 +30,7 @@ public class Book2 {
         this.author = author;
     }
 
-    // ToString
+        // ToString
     @Override
     public String toString() {
         return "Book2 [title=" + title + ", author=" + author + "]";
