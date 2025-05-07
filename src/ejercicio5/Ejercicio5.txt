@@ -1,0 +1,10 @@
+La Serialización es un proceso comúnmente utilizado en prácticamente todos los progamas en Java,
+El método más comúnmente utilizado consiste en la conversión de los datos del programa en cadenas de bits
+en lugar de texto, como hemos visto en clase, con JSON.
+La principal ventaja de este proceso de Serialización frente a JSON viene dada por la velocidad de escritura
+y lectura de los datos, porque son directamente cadenas de bits; en cambio, la ventaja de Json es precisamente
+la interoperabilidad de los datos, es decir, para intercambiar datos con API'S externas a la aplicación nativa.
+En conlusión podríamos asumir que utilizaremos un método de serialización nativa en el caso en el que pretendamos
+almacenar datos de forma interna en el programa sin el fin de exportarlos; y utilizaremos un método de serialización
+como JSON si pretendemos hacer un intercambio de datos continuo con API'S externas, porque es un "estándar"
+que facilita la comunicación.
